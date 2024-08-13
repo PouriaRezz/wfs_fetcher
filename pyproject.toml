@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "wfs-fetcher"
+version = "0.1.0"
+description = "A tool to fetch, process, and save WFS data."
+authors = ["Pouria Rezaei <rezaei.pooriya99@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+geopandas = "^1.0.1"
+owslib = "^0.31.0"
+pandas = "^2.2.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+wfs-fetcher = "wfs_fetcher.main:main"
